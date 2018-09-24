@@ -33,7 +33,7 @@
 
         {% for postagem in lista %}
                 <div class="post-preview">
-                    <a href="#">
+                    <a href="{% url 'post' pk=postagem.pk %}">
                         <h4 class="post-title titleFont">
                            {{postagem.titulo}}
                         </h4>
